@@ -1,0 +1,8 @@
+//This code snippet is NOT MY OWN WORK. I had to dig it up, then teach myself how it works. Regardless, it is awesome.
+
+function titleCase(str) {
+  //regex explanation: "\w" replaces any alphanumeric character from the basic Latin alphabet, including the underscore. Equivalent to [A-Za-z0-9_]. "\S*" matches every non-whitespace character following the "\w" char. "g" means do this as many times as "\w\S*" occurs.
+  //function(txt) explanation: return "txt.charAt(0).toUpperCase()" - returns first character identified in regex as upper case, and "txt.substr(1).toLowerCase();" means all characters left in the string, starting with the second(pos 1).
+  return str.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
+}  
+  titleCase("I'm a little tea pot");
