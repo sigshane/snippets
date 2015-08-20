@@ -1,5 +1,5 @@
 /*This code snippet is NOT MY OWN WORK. I had to dig it up, then teach myself how it works. Regardless, it is awesome.
-Plagiarized from <a href="hhttp://stackoverflow.com/users/1200558/greg-dean">Greg Dean</a> at <a href="http://stackoverflow.com/questions/196972/convert-string-to-title-case-with-javascript/196991#196991">StackOverflow.</a>*/
+Plagiarized from <a href="http://stackoverflow.com/users/1200558/greg-dean">Greg Dean</a> at <a href="http://stackoverflow.com/questions/196972/convert-string-to-title-case-with-javascript/196991#196991">StackOverflow.</a>*/
 
 function titleCase(str) {
   //regex explanation: "\w" replaces any alphanumeric character from the basic Latin alphabet, including the underscore. Equivalent to [A-Za-z0-9_]. "\S*" matches every non-whitespace character following the "\w" char. "g" means do this as many times as "\w\S*" occurs.
