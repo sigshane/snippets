@@ -1,0 +1,22 @@
+var fLen = 0;
+var len = 0;
+function findLongestWord(str) {
+  newArray = str.split(' ');
+  console.log(newArray, newArray.length);
+  for(var i = 0; i < newArray.length; i++) {
+     len = newArray[i].length;
+    console.log(newArray[i], newArray[i].length);
+    if (fLen < len)
+      {
+        fLen = len;
+      }
+  /*  else
+      {
+        fLen = fLen;
+      }*/
+  }
+  console.log(fLen);
+  return fLen;
+}
+
+findLongestWord('May the force be with you');
