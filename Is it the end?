@@ -1,0 +1,15 @@
+function end(str, target) {
+  console.log("target length " + target.length);
+  var lastChar = str.substr(str.length-(target.length),target.length);
+  console.log(lastChar);
+  if(lastChar === target)
+  {
+    return true;
+  }
+  else
+    {
+    return false;
+          }
+}
+
+end("He has to give me a new name", "name");
