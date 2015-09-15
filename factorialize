@@ -1,0 +1,12 @@
+function factorialize(num) {
+i = num;
+  var tot = 1;
+  while (i>0)
+   {
+     tot = tot * i;
+     i--;
+   }
+  return tot;
+}
+
+factorialize(5);
