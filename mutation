@@ -1,0 +1,32 @@
+function mutation(arr) {
+  var lower1 = [];
+  var lower2 = [];
+   for (var i = 0; i < arr[0].length; i++)
+    {
+    lower1.push(arr[0][i].toLowerCase());
+    }
+  console.log(lower1);
+  for (var x = 0; x < arr[1].length; x++)
+    {
+      lower2.push(arr[1][x].toLowerCase());
+    }
+  console.log(lower2);
+  var result = [];
+  for (i = 0;i<lower2.length;i++)
+    {
+       result.push(lower1.indexOf(lower2[i],0));
+       console.log(result);
+    } 
+  console.log(result.indexOf(-1));
+  if (result.indexOf(-1) > -1)
+    {
+      console.log("False");
+      return false;
+    }
+  else
+    {
+      console.log("True");
+      return true;
+    }
+}
+mutation(["hello", "hey"]);
